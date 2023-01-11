@@ -1,0 +1,206 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins",sans-serif;
+}
+
+/* VARIABLE */
+
+:root{
+    --major-bg-color:#131921;
+    --minor-bg-color:#ebeded;
+    --amazon-major-color:#febd68;
+
+}
+
+
+/* body */
+
+body{
+    background-color: var(--minor-bg-color);
+}
+/* Header */
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: var(--major-bg-color);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+
+.header .header-nav{
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+.header .header-nav .header-container{
+    width: 1200px;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header-nav .header-container .amazon-logo{
+    width: 100px;
+    
+
+}
+
+.header .header-nav .header-container .header-search{
+    width: 50%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .header-nav .header-container .header-search .search-input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding: 0px 10px;
+}
+
+.header .header-nav .header-container .header-search .search-button{
+    width: 40px;
+    height: 42px;
+    background-color: var(--amazon-major-color);
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: #232323;
+    /* border-radius: 5px;   */
+    cursor: pointer;
+}
+
+.header .header-nav .header-container .header-cart{
+    color: #ebeded;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.header .header-nav .header-container .header-cart svg{
+    width: 40px;
+    height: 40px;
+}
+
+
+/* section-1 */
+
+.product-heading{
+    /* width: 100%; */
+    height: 100px;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 30px; */
+    box-sizing: border-box;
+    /* justify-content: center; */
+}
+.product-heading .product-heading-main{
+    height: 100px;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    /* justify-content: center;  */
+    width: 1366px;
+    /* background-color: blue; */
+}
+
+/* section 2 */
+
+.product-detail{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.product-detail .product-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 1366px;
+    /* background-color: blue; */
+}
+.product-detail .product-container .product-picture{
+    /* height: 500px; */
+    width: 50%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.product-detail .product-container .product-picture img{
+    height: 500px;
+    width: 500px;
+    border-radius: 30px;
+}
+
+.product-detail .product-container .product-detail-body{
+    width: 50%;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+
+}
+
+.product-detail .product-container .product-detail-body .product-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.product-detail .product-container .product-detail-body .product-buttons .btn1{
+    width: 50%;
+    height: 40px;
+    background-color: var(--amazon-major-color);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+}
+
+.product-detail .product-container .product-detail-body .product-buttons .btn1:hover{
+    background-color: white;
+    border: 1px solid var(--amazon-major-color);
+    cursor: pointer;
+}
+
+.product-detail .product-container .product-detail-body .product-buttons .btn2{
+    width: 50%;
+    height: 40px;
+    border: 1px solid var(--amazon-major-color);
+    border-radius: 10px;
+
+}
+
+.product-detail .product-container .product-detail-body .product-buttons .btn2:hover{
+    background-color: var(--amazon-major-color);
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
